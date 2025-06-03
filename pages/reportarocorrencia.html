@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportar Ocorrência</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reportarocorrencia.css">
+</head>
+<body>
+  <main>
+    <h1>Reportar Ocorrência</h1>
+    <form id="formOcorrencia">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="tipo">Tipo de Ocorrência:</label>
+      <select id="tipo" name="tipo">
+        <option value="">Selecione</option>
+        <option value="enchente">Enchente</option>
+        <option value="alagamento">Alagamento</option>
+        <option value="bueiro">Bueiro Entupido</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label for="local">Local:</label>
+      <input type="text" id="local" name="local">
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+      <button type="submit">Enviar Ocorrência</button>
+      <p id="mensagem"></p>
+    </form>
+  </main>
+
+  <script src="../js/reportarocorrencia.js"></script>
+</body>
+</html>
